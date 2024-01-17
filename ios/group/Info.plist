@@ -49,10 +49,10 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>NunitoSans-Black.ttf</string>
-		<string>NunitoSans-Bold.ttf</string>
-		<string>NunitoSans-Light.ttf</string>
-		<string>NunitoSans-Regular.ttf</string>
+		<string>SFProDisplay-Bold.ttf</string>
+		<string>SFProDisplay-Light.ttf</string>
+		<string>SFProDisplay-Regular.ttf</string>
+		<string>Neon.ttf</string>
 	</array>
 </dict>
 </plist>

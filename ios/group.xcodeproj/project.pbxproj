@@ -14,10 +14,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-group-groupTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-group-groupTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		7ED2ACD5E3024D6C8C06BC23 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B082CCDB71E416DBEEF49D5 /* NunitoSans-Black.ttf */; };
-		F9DF65F736DA4E809C76D173 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99DCC9C80A6E49CFB9F0A327 /* NunitoSans-Bold.ttf */; };
-		132E5A81A92C4F5EADE84602 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B40531B820E044CB8B21F708 /* NunitoSans-Light.ttf */; };
-		208BC511CB7A4EAEA7ED2D54 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4507D682D21B4FE69759E7F8 /* NunitoSans-Regular.ttf */; };
+		B06BE3F4A4DB4151AEDF86A1 /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E299384A40084F01BF242E35 /* SFProDisplay-Bold.ttf */; };
+		265B3AF53EDC4E68A607B8C7 /* SFProDisplay-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13DB1F95AE77440BBBE9652D /* SFProDisplay-Light.ttf */; };
+		D068C978C90A4B48BE64C5C2 /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8235E52711B940FEA03F9597 /* SFProDisplay-Regular.ttf */; };
+		B50FE26AF1A0464CB891CAD5 /* Neon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 256396B3C8C64015B2ED0B65 /* Neon.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +48,10 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = group/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-group-groupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-group-groupTests.release.xcconfig"; path = "Target Support Files/Pods-group-groupTests/Pods-group-groupTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		4B082CCDB71E416DBEEF49D5 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Black.ttf"; path = "../assets/fonts/NunitoSans-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		99DCC9C80A6E49CFB9F0A327 /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Bold.ttf"; path = "../assets/fonts/NunitoSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B40531B820E044CB8B21F708 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Light.ttf"; path = "../assets/fonts/NunitoSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4507D682D21B4FE69759E7F8 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Regular.ttf"; path = "../assets/fonts/NunitoSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E299384A40084F01BF242E35 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Bold.ttf"; path = "../assets/fonts/SFProDisplay-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		13DB1F95AE77440BBBE9652D /* SFProDisplay-Light.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Light.ttf"; path = "../assets/fonts/SFProDisplay-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8235E52711B940FEA03F9597 /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; name = "SFProDisplay-Regular.ttf"; path = "../assets/fonts/SFProDisplay-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		256396B3C8C64015B2ED0B65 /* Neon.ttf */ = {isa = PBXFileReference; name = "Neon.ttf"; path = "../assets/fonts/Neon.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +160,10 @@
 		2F1DB394E1294F22B8198C98 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				4B082CCDB71E416DBEEF49D5 /* NunitoSans-Black.ttf */,
-				99DCC9C80A6E49CFB9F0A327 /* NunitoSans-Bold.ttf */,
-				B40531B820E044CB8B21F708 /* NunitoSans-Light.ttf */,
-				4507D682D21B4FE69759E7F8 /* NunitoSans-Regular.ttf */,
+				E299384A40084F01BF242E35 /* SFProDisplay-Bold.ttf */,
+				13DB1F95AE77440BBBE9652D /* SFProDisplay-Light.ttf */,
+				8235E52711B940FEA03F9597 /* SFProDisplay-Regular.ttf */,
+				256396B3C8C64015B2ED0B65 /* Neon.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -264,10 +264,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				7ED2ACD5E3024D6C8C06BC23 /* NunitoSans-Black.ttf in Resources */,
-				F9DF65F736DA4E809C76D173 /* NunitoSans-Bold.ttf in Resources */,
-				132E5A81A92C4F5EADE84602 /* NunitoSans-Light.ttf in Resources */,
-				208BC511CB7A4EAEA7ED2D54 /* NunitoSans-Regular.ttf in Resources */,
+				B06BE3F4A4DB4151AEDF86A1 /* SFProDisplay-Bold.ttf in Resources */,
+				265B3AF53EDC4E68A607B8C7 /* SFProDisplay-Light.ttf in Resources */,
+				D068C978C90A4B48BE64C5C2 /* SFProDisplay-Regular.ttf in Resources */,
+				B50FE26AF1A0464CB891CAD5 /* Neon.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

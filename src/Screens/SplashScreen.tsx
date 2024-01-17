@@ -1,18 +1,20 @@
 import React, { useEffect } from 'react'
 import { ActivityIndicator, ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { fontFamily, color } from '../../utils/constants'
+import LogoComponent from '../Components/LogoComponent'
 
 const SplashScreen = (props: any) => {
     useEffect(() => {
         setTimeout(() => {
             props.navigation.navigate('InitialScreen');
-        }, 5000)
+        }, 1000)
     }, [])
 
     return (
         <View style={styles.container}>
-            <ImageBackground source={require("../../assets/img/backgroundSplash.png")} style={styles.backgroundImage}>
-                <Text style={styles.title}>GROUP</Text>
-                <ActivityIndicator size="large" color="#fff"></ActivityIndicator>
+            <ImageBackground source={require("../../assets/img/backgroundSplash.png")} style={styles.background__image}>
+                <LogoComponent text_color={color.orange} size="large"/>
+                <ActivityIndicator size="large" color={color.white}></ActivityIndicator>
             </ImageBackground>
         </View>
     );
@@ -22,7 +24,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    backgroundImage: {
+    background__image: {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
@@ -38,10 +40,10 @@ const styles = StyleSheet.create({
         marginVertical: 8,
     },
     title: {
-        fontSize: 50,
+        
         color: "#ffffff",
-        marginBottom: 100,
-        fontFamily: 'NunitoSans-Black'
+        marginBottom: 50,
+        fontFamily: fontFamily.bold
     }
 })
 

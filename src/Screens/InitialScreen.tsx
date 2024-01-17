@@ -1,9 +1,13 @@
 import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native'
-import LinearGradient from 'react-native-linear-gradient';
+import { fontFamily, size } from '../../utils/constants';
 
 // Utils
 import { color } from '../../utils/constants';
+import ButtonComponent from '../Components/ButtonComponent';
+import TitleComponent from '../Components/LogoComponent';
+import TextComponent from '../Components/TextComponent';
+import { strings } from '../../utils/strings';
 
 
 const InitialScreen = ( props:any ) => {
@@ -14,18 +18,14 @@ const InitialScreen = ( props:any ) => {
 	return (
 		<View style={styles.container}>
 			<ImageBackground source={require("../../assets/img/backgroundSplash.png")} style={styles.backgroundImage} >
+				<View style={styles.initial_text__wrapper}>
+					<TitleComponent text_color={color.orange} size="large" />
+					<TextComponent text_msg={ strings.initial_title } />
+					<TextComponent text_msg={ strings.initial_subtitle } />
+				</View>
 				<View>
-					<TouchableOpacity onPress={ () => changeScreen('LoginScreen') } >
-						<LinearGradient colors={[color.blueLight, color.blue]} style={styles.screen__button}>
-							<Text style={{ color: 'white' }}>Ingresar</Text>
-						</LinearGradient>
-					</TouchableOpacity>
-
-					<TouchableOpacity onPress={ () => changeScreen('RegisterScreen')}>
-						<LinearGradient colors={[color.blueLight, color.blue]} style={styles.screen__button}>
-							<Text style={{ color: 'white' }}>Registrarse</Text>
-						</LinearGradient>
-					</TouchableOpacity>
+					<ButtonComponent text={strings.text_login} on_press={() => changeScreen('LoginScreen')} />
+					<ButtonComponent text={strings.text_register} on_press={() => changeScreen('RegisterScreen')} />
 				</View>
 			</ImageBackground>
 		</View>
@@ -41,13 +41,8 @@ const styles = StyleSheet.create({
 		justifyContent: "flex-end",
 		padding: 32,
 	},
-	screen__button: {
-		width: "100%",
-        height: 50,
-        borderRadius: 25,
-        justifyContent: "center",
-        alignItems: "center",
-        marginVertical: 8,
+	initial_text__wrapper: {
+		marginBottom: size.XXL,
 	}
 })
 
