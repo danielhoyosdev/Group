@@ -1,15 +1,13 @@
 import React from 'react'
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native'
-import { fontFamily, size } from '../../utils/constants';
+import { View, StyleSheet, ImageBackground } from 'react-native'
 
-// Utils
-import { color } from '../../utils/constants';
-import ButtonComponent from '../Components/ButtonComponent';
-import TitleComponent from '../Components/LogoComponent';
-import TextComponent from '../Components/TextComponent';
+// Components
+import { ButtonComponent, LogoComponent, TextComponent } from '../Components';
+
+// Constantes
+import { size, color } from '../../utils/constants';
 import { strings } from '../../utils/strings';
 import { assets } from '../../assets/index';
-
 
 const InitialScreen = ( props:any ) => {
 	const changeScreen = ( screen:string ) => {
@@ -18,9 +16,9 @@ const InitialScreen = ( props:any ) => {
 
 	return (
 		<View style={styles.container}>
-			<ImageBackground source={assets.bg_initial} style={styles.backgroundImage} >
+			<ImageBackground source={assets.bg_initial} style={styles.background__image} >
 				<View style={styles.initial_text__wrapper}>
-					<TitleComponent text_color={color.orange} size="large" />
+					<LogoComponent text_color={color.orange} size="large" />
 					<TextComponent text_msg={ strings.initial_title } />
 					<TextComponent text_msg={ strings.initial_subtitle } />
 				</View>
@@ -37,7 +35,7 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 	},
-	backgroundImage: {
+	background__image: {
 		flex: 1,
 		justifyContent: "flex-end",
 		padding: 32,

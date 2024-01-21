@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text } from 'react-native';
-import { color, fontFamily, size } from '../../utils/constants'
+import { color, font_family, size } from '../../utils/constants'
 
 interface TextProps {
     text_msg: string,
@@ -13,7 +13,7 @@ const TextComponent: React.FC<TextProps> = ({
     text_msg,
     text_color = color.white,
     font_size = size.LG,
-    font_type = fontFamily.regular
+    font_type = font_family.regular
 }) => {
     return (
         <Text style={[styles.text__container, { color: text_color, fontSize: font_size, fontFamily: font_type}]} >

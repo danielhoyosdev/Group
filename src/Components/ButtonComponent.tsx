@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, StyleSheet, TouchableHighlight } from 'react-native'
-import { color, fontFamily, size } from '../../utils/constants'
+import { color, font_family, size } from '../../utils/constants'
 
 interface ButtonProps {
 	text: string,
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 	},
 	button__text: {
-		fontFamily: fontFamily.regular,
+		fontFamily: font_family.regular,
 		fontSize: size.LG,
 	},
 })

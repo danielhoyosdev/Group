@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-import { fontFamily, color } from '../../utils/constants'
+import { font_family } from '../../utils/constants'
 import { strings } from '../../utils/strings'
 
 interface LogoProps {
@@ -9,11 +9,11 @@ interface LogoProps {
 }
 
 const LogoComponent:React.FC<LogoProps> = ({ text_color, size }) => {
-    const fontSize = (size === "large") ? 80 : 50;
+    const font_size = (size === "large") ? 80 : 50;
 
   return (
     <View>
-        <Text style={[styles.title__text, { color: text_color, fontSize: fontSize }]}>
+        <Text style={[styles.title__text, { color: text_color, fontSize: font_size }]}>
             { strings.app_name }
         </Text>
     </View>
@@ -22,7 +22,7 @@ const LogoComponent:React.FC<LogoProps> = ({ text_color, size }) => {
 
 const styles = StyleSheet.create({
     title__text: {
-        fontFamily: fontFamily.neon,
+        fontFamily: font_family.neon,
     }
 })
 

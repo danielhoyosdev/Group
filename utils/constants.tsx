@@ -1,6 +1,6 @@
 import { Dimensions } from 'react-native';
 
-export const size = {
+const size = {
     XXS: 4,
     XS: 8,
     SM: 12,
@@ -11,7 +11,7 @@ export const size = {
     width: Dimensions.get('window').width
 }
 
-export const color = {
+const color = {
     blue: "#005CFF",
     blueLight: "#01A8FF",
     white: "#FFF",
@@ -23,9 +23,15 @@ export const color = {
     orange: "#ff8500",
 }
 
-export const fontFamily = {
+const font_family = {
     bold : "SFProDisplay-Bold",
     light: "SFProDisplay-Light",
     regular : "SFProDisplay-Regular",
     neon: 'Neon',
+}
+
+export {
+    size,
+    color,
+    font_family
 }

@@ -1,11 +1,13 @@
 import React from 'react'
 import { View, Text, StyleSheet, ImageBackground } from 'react-native'
+
+// Constantes
 import { assets } from '../../assets/index'
 
 const LoginScreen = () => {
   return (
     <View style={styles.container}>
-        <ImageBackground source={assets.bg_login} style={styles.backgroundImage}>
+        <ImageBackground source={assets.bg_login} style={styles.background__image}>
           <Text>Ingresar</Text>
         </ImageBackground>
     </View>
@@ -16,7 +18,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  backgroundImage: {
+  background__image: {
     flex: 1,
   },
 })

@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react'
-import { ActivityIndicator, ImageBackground, StyleSheet, Text, View } from 'react-native'
-import { fontFamily, color } from '../../utils/constants'
+import { ActivityIndicator, ImageBackground, StyleSheet, View } from 'react-native'
+
+// Constantes
+import { color } from '../../utils/constants'
 import { assets } from '../../assets/index';
-import LogoComponent from '../Components/LogoComponent'
+
+// Components
+import { LogoComponent } from '../Components';
 
 const SplashScreen = (props: any) => {
     useEffect(() => {
@@ -29,23 +33,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        padding: 32,
-        
+        padding: 32,  
     },
-    screen__button: {
-        width: "100%",
-        height: 50,
-        borderRadius: 25,
-        justifyContent: "center",
-        alignItems: "center",
-        marginVertical: 8,
-    },
-    title: {
-        
-        color: "#ffffff",
-        marginBottom: 50,
-        fontFamily: fontFamily.bold
-    }
 })
 
 export default SplashScreen;
