@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { ActivityIndicator, ImageBackground, StyleSheet, Text, View } from 'react-native'
 import { fontFamily, color } from '../../utils/constants'
+import { assets } from '../../assets/index';
 import LogoComponent from '../Components/LogoComponent'
 
 const SplashScreen = (props: any) => {
@@ -12,7 +13,7 @@ const SplashScreen = (props: any) => {
 
     return (
         <View style={styles.container}>
-            <ImageBackground source={require("../../assets/img/backgroundSplash.png")} style={styles.background__image}>
+            <ImageBackground source={assets.bg_initial} style={styles.background__image}>
                 <LogoComponent text_color={color.orange} size="large"/>
                 <ActivityIndicator size="large" color={color.white}></ActivityIndicator>
             </ImageBackground>

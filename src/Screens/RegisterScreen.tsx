@@ -1,10 +1,11 @@
 import React from 'react'
 import { View, Text, StyleSheet, ImageBackground } from 'react-native'
+import { assets } from '../../assets/index'
 
 const RegisterScreen = () => {
   return (
     <View style={styles.container}>
-        <ImageBackground source={require("../../assets/img/backgroundRegister.png")} style={styles.backgroundImage}>
+        <ImageBackground source={assets.bg_register} style={styles.backgroundImage}>
           <Text>Registrarse</Text>
         </ImageBackground>
     </View>

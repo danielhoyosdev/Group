@@ -8,6 +8,7 @@ import ButtonComponent from '../Components/ButtonComponent';
 import TitleComponent from '../Components/LogoComponent';
 import TextComponent from '../Components/TextComponent';
 import { strings } from '../../utils/strings';
+import { assets } from '../../assets/index';
 
 
 const InitialScreen = ( props:any ) => {
@@ -17,7 +18,7 @@ const InitialScreen = ( props:any ) => {
 
 	return (
 		<View style={styles.container}>
-			<ImageBackground source={require("../../assets/img/backgroundSplash.png")} style={styles.backgroundImage} >
+			<ImageBackground source={assets.bg_initial} style={styles.backgroundImage} >
 				<View style={styles.initial_text__wrapper}>
 					<TitleComponent text_color={color.orange} size="large" />
 					<TextComponent text_msg={ strings.initial_title } />

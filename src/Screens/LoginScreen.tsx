@@ -1,10 +1,11 @@
 import React from 'react'
 import { View, Text, StyleSheet, ImageBackground } from 'react-native'
+import { assets } from '../../assets/index'
 
 const LoginScreen = () => {
   return (
     <View style={styles.container}>
-        <ImageBackground source={require("../../assets/img/backgroundLogin.png")} style={styles.backgroundImage}>
+        <ImageBackground source={assets.bg_login} style={styles.backgroundImage}>
           <Text>Ingresar</Text>
         </ImageBackground>
     </View>
