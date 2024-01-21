@@ -1,26 +1,30 @@
 import React from 'react'
-import { View, Text, StyleSheet, ImageBackground } from 'react-native'
+import { View, Text, StyleSheet, ImageBackground, TouchableWithoutFeedback } from 'react-native'
 
 // Constantes
 import { assets } from '../../assets/index'
+import { strings } from '../../utils/strings'
 
-const LoginScreen = () => {
-  return (
-    <View style={styles.container}>
-        <ImageBackground source={assets.bg_login} style={styles.background__image}>
-          <Text>Ingresar</Text>
-        </ImageBackground>
-    </View>
-  )
-}
+const LoginScreen = (props: any) => {
+	return (
+		<View style={styles.container}>
+			<ImageBackground source={assets.bg_login} style={styles.background__image}>
+				<Text>{strings.text_login}</Text>
+				<TouchableWithoutFeedback onPress={() => props.navigation.navigate('RestorePasswordScreen')}>
+					<Text>{strings.forgot_password}</Text>
+				</TouchableWithoutFeedback>
+			</ImageBackground>
+		</View>
+	);
+};
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  background__image: {
-    flex: 1,
-  },
+	container: {
+		flex: 1,
+	},
+	background__image: {
+		flex: 1,
+	},
 })
 
 
