@@ -7,6 +7,7 @@ export const strings = {
     welcome: "Bienvenido",
     login: "Ingresa a su cuenta",
     forgot_password: "¿ Olvidó su contraseña ?",
+    exist_account: "Ya tiene una cuenta, Inicie sesión",
     email: "Correo electrónico",
     password: "Contraseña",
 
@@ -18,5 +19,7 @@ export const strings = {
     initial_subtitle: "Todas tus experiencias y momentos importantes, desde cualquier lugar donde de encuentres.",
 
     // Restore Password
-    title_restore_password: "Restaurar contraseña"
+    title_restore_password: "Recuperar contraseña",
+    restore_msg: "Recibirá un enlace para crear una nueva contraseña por correo electrónico",
+    text_restore: "Recuperar"
 }

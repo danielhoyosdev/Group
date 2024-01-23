@@ -8,7 +8,7 @@ import { ButtonComponent, TextComponent, TitleComponent } from '../Components'
 import { assets } from '../../assets/index'
 import { strings } from '../../utils/strings'
 import { color, font_family, size } from '../../utils/constants'
-import InputComponent from '../Components/InputComponent'
+import { InputComponent } from '../Components'
 
 const LoginScreen = (props: any) => {
 	// Variables
