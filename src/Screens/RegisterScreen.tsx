@@ -3,12 +3,13 @@ import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 
 // Constantes
 import { assets } from '../../assets/index'
+import { strings } from '../../utils/strings'
 
 const RegisterScreen = () => {
 	return (
 		<View style={styles.container}>
 			<ImageBackground source={assets.bg_register} style={styles.background__image}>
-				<Text>Registrarse</Text>
+				<Text>{ strings.title_register }</Text>
 			</ImageBackground>
 		</View>
 	)

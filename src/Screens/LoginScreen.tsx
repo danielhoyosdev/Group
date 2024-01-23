@@ -9,7 +9,7 @@ const LoginScreen = (props: any) => {
 	return (
 		<View style={styles.container}>
 			<ImageBackground source={assets.bg_login} style={styles.background__image}>
-				<Text>{strings.text_login}</Text>
+				<Text>{strings.title_login}</Text>
 				<TouchableWithoutFeedback onPress={() => props.navigation.navigate('RestorePasswordScreen')}>
 					<Text>{strings.forgot_password}</Text>
 				</TouchableWithoutFeedback>

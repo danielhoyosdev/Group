@@ -7,11 +7,11 @@ import { strings } from '../../utils/strings';
 const RestorePasswordScreen = (props:any) => {
 	return (
 		<ImageBackground source={assets.bg_restore_password} style={styles.background__image}>
-			<Text>{ strings.text_restore_password }</Text>
+			<Text>{ strings.title_restore_password }</Text>
 
 			<TouchableWithoutFeedback onPress={() => props.navigation.navigate('LoginScreen')}>
 				<Text>
-					{ strings.text_login }
+					{ strings.title_login }
 				</Text>
 			</TouchableWithoutFeedback>
 		</ImageBackground>

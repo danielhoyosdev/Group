@@ -19,12 +19,12 @@ const InitialScreen = ( props:any ) => {
 			<ImageBackground source={assets.bg_initial} style={styles.background__image} >
 				<View style={styles.initial_text__wrapper}>
 					<LogoComponent text_color={color.orange} size="large" />
-					<TextComponent text_msg={ strings.initial_title } />
+					<TextComponent text_msg={ strings.initial_slogan } />
 					<TextComponent text_msg={ strings.initial_subtitle } />
 				</View>
 				<View>
-					<ButtonComponent text={strings.text_login} on_press={() => changeScreen('LoginScreen')} />
-					<ButtonComponent text={strings.text_register} on_press={() => changeScreen('RegisterScreen')} />
+					<ButtonComponent text={strings.title_login} on_press={() => changeScreen('LoginScreen')} />
+					<ButtonComponent text={strings.title_register} on_press={() => changeScreen('RegisterScreen')} />
 				</View>
 			</ImageBackground>
 		</View>
