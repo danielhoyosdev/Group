@@ -8,18 +8,14 @@ const size = {
     LG: 20,
     XL: 24,
     XXL: 32,
+    XXXL: 48,
     width: Dimensions.get('window').width
 }
 
 const color = {
-    blue: "#005CFF",
-    blueLight: "#01A8FF",
     white: "#FFF",
-    whiteDark: "#c1c1c1",
-    primary: "#242A37",
-    secondary: "#1E2432",
-    bgModal: "rgba(0,0,0,0.8)",
-    bgWhite: "#fff",
+    white_alpa: "#FFFFFF50",
+    bg_modal: "rgba(0,0,0,0.8)",
     orange: "#ff8500",
 }
 
