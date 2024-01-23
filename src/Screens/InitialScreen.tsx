@@ -5,7 +5,7 @@ import { View, StyleSheet, ImageBackground } from 'react-native'
 import { ButtonComponent, LogoComponent, TextComponent } from '../Components';
 
 // Constantes
-import { size, color } from '../../utils/constants';
+import { size, color, font_family } from '../../utils/constants';
 import { strings } from '../../utils/strings';
 import { assets } from '../../assets/index';
 
@@ -18,8 +18,7 @@ const InitialScreen = ( props:any ) => {
 		<View style={styles.container}>
 			<ImageBackground source={assets.bg_initial} style={styles.background__image} >
 				<View style={styles.initial_text__wrapper}>
-					<LogoComponent text_color={color.orange} size="large" />
-					<TextComponent text_msg={ strings.initial_slogan } />
+					<TextComponent text_msg={ strings.initial_slogan } font_size={size.XXXL} font_type={font_family.bold} />
 					<TextComponent text_msg={ strings.initial_subtitle } />
 				</View>
 				<View>

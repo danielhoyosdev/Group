@@ -4,7 +4,11 @@ export const strings = {
     
     // LoginScreen
     title_login: "Iniciar sesión",
-    forgot_password: "Olvidé mi contraseña",
+    welcome: "Bienvenido",
+    login: "Ingresa a su cuenta",
+    forgot_password: "¿ Olvidó su contraseña ?",
+    email: "Correo electrónico",
+    password: "Contraseña",
 
     // RegisterScreen:
     title_register: "Registrarse",
