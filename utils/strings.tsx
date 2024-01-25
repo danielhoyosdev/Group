@@ -13,7 +13,11 @@ export const strings = {
 
     // RegisterScreen:
     title_register: "Registrarse",
- 
+    register_msg: "Comparte tus momentos con todos",
+    names: "Nombre completo",
+    next: "Siguiente",
+    phone: "Teléfono",
+    user: "Usuario",
     // Initial Screen
     initial_slogan: "Comparte con tu familia y amigos",
     initial_subtitle: "Todas tus experiencias y momentos importantes, desde cualquier lugar donde de encuentres.",
