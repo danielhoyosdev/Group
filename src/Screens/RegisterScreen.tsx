@@ -36,7 +36,7 @@ const RegisterScreen = () => {
 		if (step <= 3) {
 			switch (step) {
 				case 1:	
-					names.length < 6 && err.push(strings.email_error);
+					names.length < 6 && err.push(strings.names_error);
 					genre.length == 0 && err.push(strings.genre_error);
 					break;
 				case 2:
